@@ -7,6 +7,7 @@ const app= express();
 app.use('/', publicRouter);
 app.use('/admin', adminRouter);
 
+// custom error handler
 app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).send('Something broke!');

@@ -1,7 +1,7 @@
 const express= require('express');
 const adminRouter= express.Router();
 
-adminRouter.get('/', (req, res)=>{
+adminRouter.get('/dashboard', (req, res)=>{
     res.send('Dashboard');
 })
 
